@@ -1,0 +1,38 @@
+// Knowledge Base
+digraph {
+	dot_0 [label="" shape=point width=0.1]
+	p [label=p]
+	p -> dot_0
+	q [label=q]
+	dot_0 -> q
+	dot_1 [label="" shape=point width=0.1]
+	l [label=l]
+	l -> dot_1
+	m [label=m]
+	m -> dot_1
+	p [label=p]
+	dot_1 -> p
+	dot_2 [label="" shape=point width=0.1]
+	b [label=b]
+	b -> dot_2
+	l [label=l]
+	l -> dot_2
+	m [label=m]
+	dot_2 -> m
+	dot_3 [label="" shape=point width=0.1]
+	a [label=a]
+	a -> dot_3
+	p [label=p]
+	p -> dot_3
+	l [label=l]
+	dot_3 -> l
+	dot_4 [label="" shape=point width=0.1]
+	a [label=a]
+	a -> dot_4
+	b [label=b]
+	b -> dot_4
+	l [label=l]
+	dot_4 -> l
+	A [label=A]
+	b [label=b]
+}
