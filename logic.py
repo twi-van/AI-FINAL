@@ -10,9 +10,9 @@ class Clause:
 
         for p in parts : #lấy từng chữ cái trong mảng parts
             if p.startswith('-'):
-                self.premises.append(p[1:]) #nếu có dấu (-) -> nó là giả thiết.Cắt bỏ dấu trừ [1:] , lấy từ ký tự thứ 1 bỏ 0 là dấu trừ đến hết và bỏ vào premises
+                self.premises.append(p[1:].lower()) #nếu có dấu (-) -> nó là giả thiết.Cắt bỏ dấu trừ [1:] , lấy từ ký tự thứ 1 bỏ 0 là dấu trừ đến hết và bỏ vào premises
             else:
-                self.conclusion = p #không có dấu (-) gắn thẳng vào kết luận
+                self.conclusion = p.lower() #không có dấu (-) gắn thẳng vào kết luận
         self.count = len(self.premises) #biến đếm premises 
 
     def is_fact(self):
